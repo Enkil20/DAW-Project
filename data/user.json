@@ -1,0 +1,13 @@
+[
+    {
+        "id":"1",
+        "type":"admin",
+        "desc": " Tendrá acceso a toda la funcionalidad del sistema y su página home será Listado de Usuarios."
+    },
+    
+    {
+        "id":"2",
+        "type":"user",
+        "desc": "​Tiene acceso a toda la funcionalidad menos al Listado de Usuarios. Su página home será Perfil de Usuario"
+    }
+]
