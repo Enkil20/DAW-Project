@@ -1,5 +1,5 @@
 <?php
-    $base_path = "http://".$_SERVER["HTTP_HOST"]
+    $base_path = "http://".$_SERVER["HTTP_HOST"];
 ?>
 
 <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
@@ -10,13 +10,13 @@
     <div class="collapse navbar-collapse" id="navbarCollapse">
         <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-                <a class="nav-link" href="<?php echo $base_path. "/about/About.HTML"?>">About us <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="<?php echo $base_path. "/about/About.HTML";?>">About us <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="<?php echo $base_path."/log/login.php"?>">Entrar</a>
+                <a class="nav-link" href="<?php echo $base_path."/log/login.php";?>">Entrar</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="<?php echo $base_path."/sing/singin.php"?>">Registrarse</a>
+                <a class="nav-link" href="<?php echo $base_path."/sing/singin.php";?>">Registrarse</a>
             </li>
         </ul>
         <form class="form-inline mt-2 mt-md-0">

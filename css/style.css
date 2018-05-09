@@ -1,0 +1,73 @@
+.list ul{
+    padding-bottom: 10%
+}
+
+.list ul li{
+    margin: 1%;
+    display: inline-block;
+}
+
+.list ul .left{
+    position: relative;
+    right: 3%;
+}
+
+.list ul .right{
+    position: relative;
+    left: 40%;
+}
+
+.list ul li a{
+    padding: 10px;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.list ul li a:hover{
+    background-color: #d16334;
+    color: #FFFFFF;
+    border-radius: 30px;
+}
+
+.parrafo{
+    padding-bottom: 1%;
+}
+
+.parrafo p{
+    font-stretch: ultra-condensed;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 250%;
+    margin: 0;
+    
+}
+
+.parrafo p span{
+    font-weight: bold;
+}
+
+.boton{
+    margin: auto;
+    text-align: center;
+}
+
+.texto{
+    font-stretch: ultra-condensed;
+    font-weight: bold;
+    color: #FFFFFF;
+    font-size: 150%;
+    margin: auto;
+    width: 50%;
+}
+
+.centro{
+    margin: auto;
+    width: 50%;
+    
+}
+
+.centro .tabla{
+    width: 900px;
+    padding: 10px;
+}
+

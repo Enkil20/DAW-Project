@@ -1,0 +1,38 @@
+.Botones{
+	text-align: center;
+	padding: 5px;
+	color: white;
+}
+
+footer {
+	font-weight: bold;
+	font-size: 100%;
+	text-align: center;
+	margin: 0px auto;
+    padding: 10px 25px;
+}
+
+footer #name{
+	margin-top: 70px;
+    background-color: #6B7994;
+	color: #FFFFFF;
+}
+
+footer #assignature{
+	
+    background-color: #5C6981;
+	color: #FFFFFF;
+}
+
+footer #year{
+    background-color: #475061;
+	color: #FFFFFF;
+}
+
+#main-container{
+	
+	padding-top: 120px;
+	padding-bottom: 50px;
+	
+	font-size: 110%;
+}
