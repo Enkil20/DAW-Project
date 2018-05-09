@@ -68,7 +68,7 @@ if(isset($_SESSION["start_time"]) && ($_SESSION["start_time"]>0)){
             </div>
 
             <div class="form-label-group">
-                <input id="inputLasttName" name"inputLasttName" class="form-control border-primary is-valid" placeholder="First Name" type="text" required>
+                <input id="inputLasttName" name="inputLasttName" class="form-control border-primary is-valid" placeholder="First Name" type="text" required>
                 <label for="inputLasttName">Apellidos</label>
             </div>
 
