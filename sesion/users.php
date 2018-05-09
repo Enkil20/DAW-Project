@@ -72,22 +72,24 @@
         getKey();
         echo $id["uname"];
     }
+
+
     if(!isset($_SESSION["session_started"])){
-        var_dump($_POST["sub"]);
         if(isset($_POST["sub"]))
         {
-            var_dump($_POST);
-            $email = $_POST["email"];
-            getUser();
+            //var_dump($_POST);
+            $email = $_POST["inputEmail"];
+            getUser();         
             foreach($Usuarios as $usr => $value){
-                if($Usuarios[$usr]["email"] == $email){
+                if($usr["email"] == $email){
                     $aux = true;
-                    echo "<br/>"."Alerta: ".$uname." el correo ya está dado de alta. Ingresa con un correo diferente. ";
-                    header ("../sing/singin.html");
+                    echo "<script>
+                    alert('Email registrado. Intente con uno diferente.');
+                    window.location.href='../sing/singin.php';
+                    </script>";
                     break;
                 }
             }
-
             if($aux == false){
                 saveUser($_POST);
                 session_start();

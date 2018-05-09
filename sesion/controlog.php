@@ -19,7 +19,10 @@
             }else{
                 $_SESSION["session_started"] = false;
                 $flag = 2;
-                header("Location: ../log/login.php");
+                echo "<script>
+                alert('Contraseña Incorrecta');
+                window.location.href='../log/login.php';
+                </script>";
                 
             }
         }
@@ -28,8 +31,9 @@
         header("Location: ../index.php");
     }
     elseif($flag == 0){
-        
-        header("Location: ../sing/singin.php");
+        echo "<script>
+        alert('Usuario no resgistrado.');
+        window.location.href='../sing/singin.php';
+        </script>";
     }
-    
 ?>

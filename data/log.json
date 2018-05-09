@@ -11,12 +11,12 @@
             {
                 "id": "33",
                 "nombre": "avion",
-                "url": "https://www.fb.com"
+                "url": "https:\/\/www.fb.com"
             },
             {
                 "id": "544",
                 "nombre": "tu amor",
-                "url": "https://www.toon.com"
+                "url": "https:\/\/www.toon.com"
             }
         ]
     },
@@ -32,12 +32,12 @@
             {
                 "id": "3",
                 "nombre": "tele",
-                "url": "https://www.fb.com"
+                "url": "https:\/\/www.fb.com"
             },
             {
                 "id": "54",
                 "nombre": "cell",
-                "url": "https://www.toon.com"
+                "url": "https:\/\/www.toon.com"
             }
         ]
     },
@@ -53,12 +53,12 @@
             {
                 "id": "2",
                 "nombre": "tele grande",
-                "url": "https://www.fb.com"
+                "url": "https:\/\/www.fb.com"
             },
             {
                 "id": "4",
-                "nombre": "cell más grandre",
-                "url": "https://www.toon.com"
+                "nombre": "cell m\u00e1s grandre",
+                "url": "https:\/\/www.toon.com"
             }
         ]
     },
@@ -74,12 +74,12 @@
             {
                 "id": "34343",
                 "nombre": "tele come carne",
-                "url": "https://www.fb.com"
+                "url": "https:\/\/www.fb.com"
             },
             {
                 "id": "523454",
                 "nombre": "cell el que casi mata a todos... ay goku D:",
-                "url": "https://www.toon.com"
+                "url": "https:\/\/www.toon.com"
             }
         ]
     },
@@ -95,12 +95,12 @@
             {
                 "id": "3",
                 "nombre": "tele",
-                "url": "https://www.fb.com"
+                "url": "https:\/\/www.fb.com"
             },
             {
                 "id": "54",
                 "nombre": "cell",
-                "url": "https://www.toon.com"
+                "url": "https:\/\/www.toon.com"
             }
         ]
     }
