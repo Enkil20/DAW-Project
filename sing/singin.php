@@ -14,10 +14,7 @@
 
 session_start();
 if(isset($_SESSION["start_time"]) && ($_SESSION["start_time"]>0)){
-    if($_SESSION["type"]=="2")
-        header ("Location: ../profile/profile.html");
-    else if ($_SESSION["type"]=="1")
-        header ("Location: ./listado_usuarios.php");
+    header ("Location: ../profile/profile.php");
 }
 ?>
 
@@ -31,7 +28,7 @@ if(isset($_SESSION["start_time"]) && ($_SESSION["start_time"]>0)){
 
         <!-- CSS Externa -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-        <link rel="stylesheet" href="/css/logstyle.css" type="text/css" />
+        <link rel="stylesheet" href="../css/logstyle.css" type="text/css" />
 
         <script>
 
@@ -47,7 +44,7 @@ if(isset($_SESSION["start_time"]) && ($_SESSION["start_time"]>0)){
                 }else{
                     alert = "Password don't math";
                     pass2.innerHTML = "";
-                    window.location.href = "../index.html";
+                    window.location.href = "../index.php";
                 }
             }
         </script>
@@ -57,9 +54,9 @@ if(isset($_SESSION["start_time"]) && ($_SESSION["start_time"]>0)){
     <body>
         <form action="../sesion/users.php" class="form-signin" method="POST">
             <div class="text-center mb-4">
-                <img class="mb-4 img" src="/images/logo.png" alt="">
+                <img class="mb-4 img" src="../images/logo.png" alt="">
                 <h1 class="h3 mb-3 font-weight-normal">Regístrate</h1>
-                <p>Aún con dudas?... <a href="/index.html">Realizar más búsquedas.</a></p>
+                <p>Aún con dudas?... <a href="../index.html">Realizar más búsquedas.</a></p>
             </div>
 
             <div class="form-label-group">

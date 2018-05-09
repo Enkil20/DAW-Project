@@ -5,6 +5,7 @@
     $Usuarios;
     $id;
     $aux = false;
+    $producto;
 
     function getUser()
     {
@@ -42,11 +43,19 @@
 
         if(sizeof($Usuarios)!=0){
             foreach($Usuarios as $usr){
-                if($_SESSION["uname"]==$Usuarios[$usr]["uname"]){
+                if($_SESSION["user"]==$usr["email"]){
                     $id=$usr;
                 }
             }
         }
+    }
+
+    function Products(){
+        getUser();
+        global $id;
+        getKey();
+        $producto = $Usuarios[$id]["producto"];
+        
     }
 
     function Name(){
@@ -82,9 +91,9 @@
             saveUser($_POST);
             session_start();
             $_SESSION["start_time"] = time();
-            $_SESSION["user"] = $uname;
+            $_SESSION["user"] = $email;
             $_SESSION["type"] = "2";
-            header("Location: ../profile/profile.html");
+            header("Location: ../profile/profile.php");
         }
        
     }

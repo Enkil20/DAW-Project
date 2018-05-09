@@ -1,1 +1,107 @@
-[{"id":"5ad54d5c31926","uname":"Ivan","type":"1","password":"hola123","name":"Ivan","last":"Ochoa","email":"a01209351@itesm.mx"},{"id":"5ad54d6d35e44","uname":"Erick","type":"1","password":"Prof_admin","name":"Erick","last":"Profesor","email":"admin@hotmail.com"},{"id":"5ad54e2972cbd","uname":"Xavier","type":"2","password":"holo123","name":"Xavier","last":"Gonzalez","email":"x_men@hotmail.com"},{"id":"5adfe0644ebc7","uname":"Adriana","type":"1","password":"hola123","name":"Adriana","last":"Perez","email":"adri.p@hotmail.com"},{"id":"5adfead831af3","uname":"Thor","type":"2","password":"Thor123","name":"Thor","last":"No existe","email":"thanos_nome_mata@hotmail.com"},{"id":"5af20d7234e0d","uname":"d","type":"2","password":"de","name":"d","last":null,"email":"d@d.d"},{"id":"5af20dd6d9e05","uname":"d","type":"2","password":"ss","name":"d","last":null,"email":"d@d.d"},{"id":"5af21948248e1","uname":"d","type":"2","password":"kjh","name":"d","last":null,"email":"d@d.d"},{"id":"5af2199020ab1","uname":"d","type":"2","password":"sad","name":"d","last":null,"email":"d@d.d"},{"id":"5af2602e9329e","uname":"ded","type":"2","password":"dede","name":"ded","last":null,"email":"a@a.c"},{"id":"5af26060092ef","uname":"ded","type":"2","password":"dede","name":"ded","last":null,"email":"a@a.c"}]
+[
+    {
+        "id": "5ad54d5c31926",
+        "uname": "Ivan",
+        "type": "1",
+        "password": "hola123",
+        "name": "Ivan",
+        "last": "Ochoa",
+        "email": "a01209351@itesm.mx",
+        "producto": [
+            {
+                "id": "33",
+                "nombre": "avion",
+                "url": "https://www.fb.com"
+            },
+            {
+                "id": "544",
+                "nombre": "tu amor",
+                "url": "https://www.toon.com"
+            }
+        ]
+    },
+    {
+        "id": "5ad54d6d35e44",
+        "uname": "Erick",
+        "type": "1",
+        "password": "Prof_admin",
+        "name": "Erick",
+        "last": "Profesor",
+        "email": "admin@hotmail.com",
+        "producto": [
+            {
+                "id": "3",
+                "nombre": "tele",
+                "url": "https://www.fb.com"
+            },
+            {
+                "id": "54",
+                "nombre": "cell",
+                "url": "https://www.toon.com"
+            }
+        ]
+    },
+    {
+        "id": "5ad54e2972cbd",
+        "uname": "Xavier",
+        "type": "2",
+        "password": "holo123",
+        "name": "Xavier",
+        "last": "Gonzalez",
+        "email": "x_men@hotmail.com",
+        "producto": [
+            {
+                "id": "2",
+                "nombre": "tele grande",
+                "url": "https://www.fb.com"
+            },
+            {
+                "id": "4",
+                "nombre": "cell más grandre",
+                "url": "https://www.toon.com"
+            }
+        ]
+    },
+    {
+        "id": "5adfe0644ebc7",
+        "uname": "Adriana",
+        "type": "1",
+        "password": "hola123",
+        "name": "Adriana",
+        "last": "Perez",
+        "email": "adri.p@hotmail.com",
+        "producto": [
+            {
+                "id": "34343",
+                "nombre": "tele come carne",
+                "url": "https://www.fb.com"
+            },
+            {
+                "id": "523454",
+                "nombre": "cell el que casi mata a todos... ay goku D:",
+                "url": "https://www.toon.com"
+            }
+        ]
+    },
+    {
+        "id": "5adfead831af3",
+        "uname": "Thor",
+        "type": "2",
+        "password": "Thor123",
+        "name": "Thor",
+        "last": "No existe",
+        "email": "thanos_nome_mata@hotmail.com",
+        "producto": [
+            {
+                "id": "3",
+                "nombre": "tele",
+                "url": "https://www.fb.com"
+            },
+            {
+                "id": "54",
+                "nombre": "cell",
+                "url": "https://www.toon.com"
+            }
+        ]
+    }
+]

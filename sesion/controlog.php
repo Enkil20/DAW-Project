@@ -11,7 +11,7 @@
             if($users[$usr]["password"] == $pswd){
                 $_SESSION["session_started"] = true;   
                 $_SESSION["start_time"] = time();
-                $_SESSION["user"] = $user;
+                $_SESSION["user"] = $email;
                 $_SESSION["type"] = $users[$usr]["type"];
                 $_SESSION["id"]=$users[$usr]["id"];
                 $flag = 1;
@@ -25,7 +25,7 @@
         }
     }
     if($flag == 1){
-        header("Location: ../index.html");
+        header("Location: ../index.php");
     }
     elseif($flag == 0){
         

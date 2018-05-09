@@ -1,3 +1,11 @@
+<?php
+session_start();
+?>
+
+<?php
+    require_once "../sesion/users.php";
+?>
+
 <!doctype html>
 <html>
     <head>
@@ -15,7 +23,7 @@
         <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 
     </head>
-        <?php require_once "../header/header.php" ?>
+        <?php require_once "../header/header.php"; ?>
     <body>
         <div class="wraper">
             <div class="container" id="cont" >
@@ -27,16 +35,15 @@
                         </div>
                         <div class="info">
                             <div class="title">
-                                <a target="_blank" href="../sesion/logout.php">gominola_33</a>
+                                <a target="_blank" href="../sesion/logout.php"><?php Uname(); ?></a>
                             </div>
-                            <div class="desc">Pablito Estadra</div>
-                            <div class="desc">33 anos</div>
+                            <div class="desc"><?php var_dump($_SESSION["user"]); Name(); ?></div>
                         </div>
                         <div class="bottom">
                             <a class="btn btn-primary btn-twitter btn-sm" href="https://twitter.com/">
                                 <i class="fa fa-twitter"></i>
                             </a>
-                            <a class="btn btn-danger btn-sm" rel="publisher" href="https://fb.com/">
+                            <a class="btn btn-danger btn-sm" rel="publisher" href="../sesion/logout.php">
                                 <i class="fa fa-google-plus"></i>
                             </a>
                             <a class="btn btn-primary btn-sm" rel="publisher" href="https://plus.google.com/">
@@ -49,6 +56,22 @@
             <div class="consulta">
                 <div id="lista">
                     <h1>Productos Consultados</h1>
+                    <div id="productos">
+                        <table border="5">
+                            <tr>
+                                <th>Name</th>
+                                <th>URL</th>
+                            </tr>
+                            <?php
+                                foreach($producto as $pr){
+                                    echo "<tr>";
+                                    echo "<td>".$pr["nombre"]."<td>"; 
+                                    echo "<td>".$pr["url"]."<td>";
+                                    echo "<tr>";
+                                }
+                            ?>
+                        </table>
+                    </div>
                 </div>
                 <div id="config">
                     <p>Cambiar Constraseña</p>
