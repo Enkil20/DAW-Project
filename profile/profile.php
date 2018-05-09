@@ -18,39 +18,7 @@
 
     <body>
         <div class="wraper">
-            <?php require_once dirname(__FILE__) ."../header/header.php"; ?> 
-        <div class="container">
-            <div class="col-lg-3 col-sm-6">
-                <div class="card hovercard">
-                    <div class="cardheader"></div>
-                    <div class="avatar">
-                        <img alt="" src="https://images.ctfassets.net/o59xlnp87tr5/Xu49VLbm80ey028O0OEQS/2d3addd06f9d769d8db3d50ef3f5e95f/feeling_down.jpg?w=360&h=240&fit=fill">
-                    </div>
-                    <div class="info">
-                        <div class="title">
-                            <a target="_blank" href="../sesion/logout.php">gominola_33</a>
-                        </div>
-                        <div class="desc">Pablito Estadra</div>
-                        <div class="desc">33 anos</div>
-                    </div>
-                    <div class="bottom">
-                        <a class="btn btn-primary btn-twitter btn-sm" href="https://twitter.com/">
-                            <i class="fa fa-twitter"></i>
-                        </a>
-                        <a class="btn btn-danger btn-sm" rel="publisher" href="https://fb.com/">
-                            <i class="fa fa-google-plus"></i>
-                        </a>
-                        <a class="btn btn-primary btn-sm" rel="publisher" href="https://plus.google.com/">
-                            <i class="fa fa-facebook"></i>
-                        </a>
-                    </div>
-                </div>
-            </div> 
+            <?php require_once $_SERVER["HTTP_HOST"]."/DAW-Project/header/header.php";?> 
         </div>
-
-        <div class"consulta">
-            <span>Productos Consultados</span>
-        </div>
-    </div>
     </body>
 </html>
