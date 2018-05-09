@@ -37,18 +37,21 @@ session_start();
                             <div class="title">
                                 <a target="_blank" href="../sesion/logout.php"><?php Uname(); ?></a>
                             </div>
-                            <div class="desc"><?php var_dump($_SESSION["user"]); Name(); ?></div>
+                            <div class="desc"><?php Name(); ?></div>
                         </div>
                         <div class="bottom">
                             <a class="btn btn-primary btn-twitter btn-sm" href="https://twitter.com/">
                                 <i class="fa fa-twitter"></i>
                             </a>
-                            <a class="btn btn-danger btn-sm" rel="publisher" href="../sesion/logout.php">
+                            <a class="btn btn-danger btn-sm" rel="publisher" href="https://plus.google.com/">
                                 <i class="fa fa-google-plus"></i>
                             </a>
-                            <a class="btn btn-primary btn-sm" rel="publisher" href="https://plus.google.com/">
+                            <a class="btn btn-primary btn-sm" rel="publisher" href="https://fb.com">
                                 <i class="fa fa-facebook"></i>
                             </a>
+                            </br>
+                            </br>
+                            <a class="btn btn-primary btn-lg" href="../sesion/logout.php" role="button" style="height: 50px;width: 70px;">Bye</a>
                         </div>
                     </div>
                 </div> 
@@ -63,10 +66,11 @@ session_start();
                                 <th>URL</th>
                             </tr>
                             <?php
+                                Products();
                                 foreach($producto as $pr){
                                     echo "<tr>";
-                                    echo "<td>".$pr["nombre"]."<td>"; 
-                                    echo "<td>".$pr["url"]."<td>";
+                                    echo "<td>".$pr["nombre"]."</td>"; 
+                                    echo "<td>".$pr["url"]."</td>";
                                     echo "<tr>";
                                 }
                             ?>
