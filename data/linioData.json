@@ -1,0 +1,92 @@
+[
+	{
+		"id": 1,
+		"productName": "Laptop Dell E6430 14\" Intel Core I5 4Gb Ram 320 Gb Hdd\" Wifi ",
+		"url": "https://www.linio.com.mx/p/laptop-dell-e6430-14-intel-core-i5-4gb-ram-320-gb-hdd-wifi-dvd-r-rw-dl-jrkzdw",
+		"price": 5333,
+		"keyWord1":"Laptop",
+		"keyWord2":"Dell",
+		"keyWord3":"I5"
+	},
+	{
+		"id": 2,
+		"productName": "Laptop Lenovo Ideapad",
+		"url": "https://www.linio.com.mx/p/laptop-lenovo-ideapad-b41-30-intel-celeron-2gb-ram-500gb-hdd-ram-pantalla-14-negra-oporf3",
+		"price": 5990,
+		"keyWord1":"Laptop",
+		"keyWord2":"Lenovo",
+		"keyWord3":"Celeron"
+	},
+	{
+		"id": 3,
+		"productName": "Laptop Asus Tp301Ua-Dw080T Intel Core i3 RAM 8GB DD 1TB Win 10 Touchscreen 13.3",
+		"url": "https://www.linio.com.mx/p/laptop-asus-tp301ua-dw080t-intel-core-i3-ram-8gb-dd-1tb-win-10-touchscreen-133-negro-x27yzu",
+		"price": 11399,
+		"keyWord1":"Laptop",
+		"keyWord2":"Asus",
+		"keyWord3":"I3"
+	},
+	{
+		"id": 4,
+		"productName": "All In One Lenovo IdeaCentre 310-20IAP Intel Celeron J3355 RAM 4GB DD 500GB DVD-RW Windows 10 Home LED 19.5",
+		"url": "https://www.linio.com.mx/p/all-in-one-lenovo-ideacentre-310-20iap-intel-celeron-j3355-ram-4gb-dd-500gb-dvd-rw-windows-10-home-led-195-blanco-ldczr3",
+		"price": 9999,
+		"keyWord1":"All-in-one",
+		"keyWord2":"Lenovo",
+		"keyWord3":"Celeron"
+	},
+	{
+		"id": 5,
+		"productName": "All In One HP 20-C207LA Intel Core i3 RAM 4 GB DD 1 TB 19.5",
+		"url": "https://www.linio.com.mx/p/all-in-one-hp-20-c207la-intel-core-i3-ram-4-gb-dd-1-tb-195-blanco-on85nx",
+		"price": 11479,
+		"keyWord1":"All-in-one",
+		"keyWord2":"Lenovo",
+		"keyWord3":"I3"
+	},
+	{
+		"id": 6,
+		"productName": "Monitor LG De 19 Pulgadas Negro",
+		"url": "https://www.linio.com.mx/p/monitor-lg-de-19-pulgadas-negro-vbpab4",
+		"price": 1650,
+		"keyWord1":"Monitor",
+		"keyWord2":"Lg",
+		"keyWord3":"19Inch"
+	},
+	{
+		"id": 7,
+		"productName": "MONITOR LED HP 25-ER 1920X1080/FULL-HD/VGA/HDMI/BLANCO NEVASCA",
+		"url": "https://www.linio.com.mx/p/monitor-led-hp-25-er-1920x1080-full-hd-vga-hdmi-blanco-nevasca-qeef4o",
+		"price": 5689,
+		"keyWord1":"Monitor",
+		"keyWord2":"Hp",
+		"keyWord3":"FullHd"
+	},
+	{
+		"id": 8,
+		"productName": "Tablet Lenovo Yoga Tab 3 X50F, Procesador Snapdragon 212 Quad-core (1.3 GHz), Memoria RAM De 1GB, Almacenamiento De 16GB, Soporta MicroSD, Pantalla IPS De 10.1\" (1280x800), Red Wi-Fi 802.11 B/g/n, Bluetooth, Cámara Rotativa, Android 5.0. ZA0H0013MX",
+		"url": "https://www.linio.com.mx/p/tablet-lenovo-yoga-tab-3-x50f-procesador-snapdragon-212-quad-core-13-ghz-memoria-ram-de-1gb-almacenamiento-de-16gb-soporta-microsd-pantalla-ips-de-101-1280x800-red-wi-fi-80211-b-g-n-bluetooth-ca-mara-rotativa-android-50-za0h0013mx-n1jxuk",
+		"price": 5035,
+		"keyWord1":"Tablet",
+		"keyWord2":"Lenovo",
+		"keyWord3":"Yoga"
+	},
+	{
+		"id": 9,
+		"productName": "Tablet Vac A702 Android 6 Doble Camara 8GB Capacitiva Wifi Bluetooth",
+		"url": "https://www.linio.com.mx/p/tablet-vac-a702-android-6-doble-camara-8gb-capacitiva-wifi-bluetooth-ylfd8x",
+		"price": 885,
+		"keyWord1":"Tablet",
+		"keyWord2":"Android",
+		"keyWord3":"DobleCamara"
+	},
+	{
+		"id": 10,
+		"productName": "Enfriador De Laptop Ventilador Externo Usb Extractor De Aire",
+		"url": "https://www.linio.com.mx/p/enfriador-de-laptop-ventilador-externo-usb-extractor-de-aire-n4ev33",
+		"price": 419,
+		"keyWord1":"Enfriador",
+		"keyWord2":"Ventilador",
+		"keyWord3":"Externo"
+	}
+]
