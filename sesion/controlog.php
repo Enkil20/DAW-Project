@@ -15,25 +15,9 @@
                 $_SESSION["type"] = $users[$usr]["type"];
                 $_SESSION["id"]=$users[$usr]["id"];
                 $flag = 1;
+                header("Location: ../index.php");
                 break;
-            }else{
-                $_SESSION["session_started"] = false;
-                $flag = 2;
-                echo "<script>
-                alert('Contraseña Incorrecta');
-                window.location.href='../log/login.php';
-                </script>";
-                
             }
         }
-    }
-    if($flag == 1){
-        header("Location: ../index.php");
-    }
-    elseif($flag == 0){
-        echo "<script>
-        alert('Usuario no resgistrado.');
-        window.location.href='../sing/singin.php';
-        </script>";
     }
 ?>
