@@ -6,7 +6,8 @@
     $users=readJson($file);
     $email=$_POST["inputEmail"];
     $pswd=$_POST["inputPassword"];
-    foreach($users as $usr => $value){
+    var_dump($users);
+    foreach($users as $usr => $value){       
         if($users[$usr]["email"] == $email){
             if($users[$usr]["password"] == $pswd){
                 $_SESSION["session_started"] = true;   

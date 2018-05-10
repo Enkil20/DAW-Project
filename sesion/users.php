@@ -31,9 +31,6 @@
                     );
         $Usuarios[] = $newUsuario;
         saveJson($Usuarios, $file);
-        echo "<pre>";
-        var_dump($Usuarios);
-        echo "</pre>";
     }
 
     function getKey(){
@@ -77,9 +74,8 @@
     if(!isset($_SESSION["session_started"])){
         if(isset($_POST["sub"]))
         {
-            //var_dump($_POST);
             $email = $_POST["inputEmail"];
-            getUser();         
+            getUser();        
             foreach($Usuarios as $usr => $value){
                 if($usr["email"] == $email){
                     $aux = true;
@@ -93,10 +89,11 @@
             if($aux == false){
                 saveUser($_POST);
                 session_start();
+                $_SESSION["session_started"] = true; 
                 $_SESSION["start_time"] = time();
                 $_SESSION["user"] = $email;
                 $_SESSION["type"] = "2";
-                header("Location: ../profile/profile.php");
+                //header("Location: ../profile/profile.php");
             }
         
         }
