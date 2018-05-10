@@ -6,7 +6,19 @@
         "password": "hola123",
         "name": "Ivan",
         "last": "Ochoa",
-        "email": "a01209351@itesm.mx"
+        "email": "a01209351@itesm.mx",
+        "producto": [
+            {
+                "id": "33",
+                "nombre": "avion",
+                "url": "https://www.fb.com"
+            },
+            {
+                "id": "544",
+                "nombre": "tu amor",
+                "url": "https://www.toon.com"
+            }
+        ]
     },
     {
         "id": "5ad54d6d35e44",
@@ -15,7 +27,19 @@
         "password": "Prof_admin",
         "name": "Erick",
         "last": "Profesor",
-        "email": "admin@hotmail.com"
+        "email": "admin@hotmail.com",
+        "producto": [
+            {
+                "id": "3",
+                "nombre": "tele",
+                "url": "https://www.fb.com"
+            },
+            {
+                "id": "54",
+                "nombre": "cell",
+                "url": "https://www.toon.com"
+            }
+        ]
     },
     {
         "id": "5ad54e2972cbd",
@@ -24,7 +48,19 @@
         "password": "holo123",
         "name": "Xavier",
         "last": "Gonzalez",
-        "email": "x_men@hotmail.com"
+        "email": "x_men@hotmail.com",
+        "producto": [
+            {
+                "id": "2",
+                "nombre": "tele grande",
+                "url": "https://www.fb.com"
+            },
+            {
+                "id": "4",
+                "nombre": "cell mas grandre",
+                "url": "https://www.toon.com"
+            }
+        ]
     },
     {
         "id": "5adfe0644ebc7",
@@ -33,7 +69,19 @@
         "password": "hola123",
         "name": "Adriana",
         "last": "Perez",
-        "email": "adri.p@hotmail.com"
+        "email": "adri.p@hotmail.com",
+        "producto": [
+            {
+                "id": "34343",
+                "nombre": "tele come carne",
+                "url": "https://www.fb.com"
+            },
+            {
+                "id": "523454",
+                "nombre": "cell el que casi mata a todos... ay goku D:",
+                "url": "https://www.toon.com"
+            }
+        ]
     },
     {
         "id": "5adfead831af3",
@@ -42,6 +90,39 @@
         "password": "Thor123",
         "name": "Thor",
         "last": "No existe",
-        "email": "thanos_nome_mata@hotmail.com"
+        "email": "thanos_nome_mata@hotmail.com",
+        "producto": [
+            {
+                "id": "3",
+                "nombre": "tele",
+                "url": "https://www.fb.com"
+            },
+            {
+                "id": "54",
+                "nombre": "cell",
+                "url": "https://www.toon.com"
+            }
+        ]
+    },
+    {
+        "id": "5af39ea269c55",
+        "uname": "Arturo",
+        "type": "2",
+        "password": "aaa123",
+        "name": "Arturo",
+        "last": "Salinas",
+        "email": "aaa@hotmail.com",
+        "producto": [
+            {
+                "id": "34343",
+                "nombre": "tele come carne",
+                "url": "https://www.fb.com"
+            },
+            {
+                "id": "523454",
+                "nombre": "cell el que casi mata a todos... ay goku D:",
+                "url": "https://www.toon.com"
+            }
+        ]
     }
 ]

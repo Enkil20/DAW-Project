@@ -1,17 +1,15 @@
 <?php
     require_once dirname(__FILE__) . "/json.php";
     $file = "../data/log.json";
-    $filet = "../data/user.json";
     $Usuarios;
     $id;
     $aux = false;
-
+    $producto;
     function getUser()
     {
         global $file;
         global $Usuarios;
         $Usuarios = readJson($file);
-        $Utype = readJson($filet);
     }
 
     function saveUser($data)
@@ -30,68 +28,63 @@
                     );
         $Usuarios[] = $newUsuario;
         saveJson($Usuarios, $file);
-        echo "<pre>";
-        var_dump($Usuarios);
-        echo "</pre>";
     }
 
     function getKey(){
-       getUser();
-
+        getUser();
         global $id;
-
+        global $Usuarios;
         if(sizeof($Usuarios)!=0){
             foreach($Usuarios as $usr){
-                if($_SESSION["email"]==$Usuarios[$usr]["email"]){
+                if($_SESSION["user"]==$usr["email"]){
                     $id=$usr;
                 }
             }
         }
     }
-
-    function Bday(){
+    function Products(){
         getUser();
         global $id;
+        global $producto;
         getKey();
-
-       
+        $producto = $id["producto"];
+    }
     function Name(){
         getUser();
         global $id;
         getKey();
-        echo $Usuarios[$id]["name"] . " " . $Usuarios[$id]["last"];
+        echo $id["name"] . " " . $id["last"];
     }
 
     function UName(){
         getUser();
         global $id;
         getKey();
-        echo $Usuarios[$id]["uname"];
+        echo $id["uname"];
     }
-
-    if(isset($_POST["sub"]))
-    {
-        $email = $_POST["email"];
-        getUser();
-        foreach($Usuarios as $usr => $value){
-            if($Usuarios[$usr]["email"] == $email){
-                $aux = true;
-                echo "<br/>"."The user ".$email." is already taken, please try another one";
-                header ("refresh:5; url=entrada_formulario.php");
-                break;
+    if(!isset($_SESSION["session_started"])){
+        if(isset($_POST["sub"]))
+        {
+            $email = $_POST["inputEmail"];
+            getUser();         
+            foreach($Usuarios as $usr => $value){
+                if($usr["email"] == $email){
+                    $aux = true;
+                    echo "<script>
+                    alert('Email registrado. Intente con uno diferente.');
+                    window.location.href='../sing/singin.php';
+                    </script>";
+                    break;
+                }
+            }
+            if($aux == false){
+                saveUser($_POST);
+                session_start();
+                $_SESSION["start_time"] = time();
+                $_SESSION["user"] = $email;
+                $_SESSION["type"] = "2";
+                header("Location: ../profile/profile.php");
             }
         }
-
-        if($aux == false){
-            $uname = 
-            saveUser($_POST);
-            session_start();
-            $_SESSION["start_time"] = time();
-            $_SESSION["user"] = $uname;
-            $_SESSION["type"] = "2";
-            header("Location: ../index.php");
-        }
-       
     }
-
 ?>
