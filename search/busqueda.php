@@ -62,6 +62,7 @@
                 }
             }
             saveProduct($res);
+            header("Location: ../profile/profile.php");
         }
     }else{
         header("Location: ../log/login.php");
