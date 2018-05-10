@@ -1,0 +1,92 @@
+[
+	{
+		"id": 1,
+		"productName": "Dell Latitude E6430",
+		"url": "https://www.amazon.com.mx/Dell-Latitude-E6430-Windows-Professional/dp/B008OK05QC/ref=sr_1_1?s=computers&ie=UTF8&qid=1525823255&sr=1-1&keywords=Laptop+Dell+Core+I5+E6430",
+		"price": 15723,
+		"keyWord1":"Laptop",
+		"keyWord2":"Dell",
+		"keyWord3":"I5"
+	},
+	{
+		"id": 2,
+		"productName": "Lenovo V110 Portátil 14\" Intel Celeron 1.10GHz 4Gb Windows 10",
+		"url": "https://www.amazon.com.mx/Lenovo-V110-Port%C3%A1til-Celeron-1-10GHz/dp/B0749RDQGW/ref=sr_1_8?s=electronics&ie=UTF8&qid=1525823408&sr=1-8&keywords=Laptop+Lenovo+Ideapad",
+		"price": 5169,
+		"keyWord1":"Laptop",
+		"keyWord2":"Lenovo",
+		"keyWord3":"Ideapad"		
+	},
+	{
+		"id": 3,
+		"productName": "ASUS Laptop TP201SA-FV0007T Intel N3710 4GB 500GB Touch 11.6",
+		"url": "https://www.amazon.com.mx/Laptop-TP201SA-FV0007T-Reacondicionado-Certified-Refurbished/dp/B079YN3TXM/ref=sr_1_1?s=electronics&ie=UTF8&qid=1525824752&sr=1-1&keywords=Laptop+Asus+Tp201sa",
+		"price": 5799,
+		"keyWord1":"Laptop",
+		"keyWord2":"Asus",
+		"keyWord3":"Tp201sa"
+	},
+	{
+		"id": 4,
+		"productName": "Lenovo F0CL000BLD All In One 310-IAP, Intel Celeron J3355 2.0 GHz, 4 GB, 1 TB HDD, Windows 10 Home",
+		"url": "https://www.amazon.com.mx/Lenovo-F0CL000BLD-310-IAP-Celeron-Windows/dp/B06XS7Z8XS/ref=sr_1_1?s=electronics&ie=UTF8&qid=1525824880&sr=1-1&keywords=Lenovo+All+In+One",
+		"price": 8299,
+		"keyWord1":"Laptop",
+		"keyWord2":"Lenovo",
+		"keyWord3":"All-in-one"	
+	},
+	{
+		"id": 5,
+		"productName": "HP 20-c206la All-in-one Desktop, 19.5\", AMD A4_7210 1.8 GHz, 4 GB RAM, Disco Duro 1 TB, Windows 10, color Blanco",
+		"url": "https://www.amazon.com.mx/HP-20-c206la-Desktop-A4_7210-Windows/dp/B0714JW6QL/ref=sr_1_fkmr0_2?s=electronics&ie=UTF8&qid=1525825031&sr=1-2-fkmr0&keywords=All+In+One+Hp+20-c207la+Intel+Core+I3+Ram+4+Gb+Dd+1+Tb+19.5",
+		"price": 7999,
+		"keyWord1":"Laptop",
+		"keyWord2":"Hp",
+		"keyWord3":"I3"
+	},
+	{
+		"id": 6,
+		"productName": "Monitor LG 19M38A-B - 18.5\" - 1366 x 768 - VGA - Negro",
+		"url": "https://www.amazon.com.mx/Monitor-LG-19M38A-B-18-5-Negro/dp/B01DGHLDFO/ref=sr_1_2?s=electronics&ie=UTF8&qid=1525825214&sr=1-2&keywords=Monitor+Lg+19M38A",
+		"price": 1719,
+		"keyWord1":"Monitor",
+		"keyWord2":"Lg",
+		"keyWord3":"19M38A"
+	},
+	{
+		"id": 7,
+		"productName": "HP HP 24es Monitor 23.8\", LED-Lit, 1920x1080, 16:9, HDMI, 60 Hertz",
+		"url": "https://www.amazon.com.mx/HP-24es-Monitor-LED-Lit-1920x1080/dp/B072J9K1YQ/ref=sr_1_fkmr0_1?s=electronics&ie=UTF8&qid=1525825318&sr=1-1-fkmr0&keywords=Monitor+Hp+24es+24+Pulg+Full+Hd+1920x1080+Vga+Y+Hdmi+T3m78aa",
+		"price": 4189,
+		"keyWord1":"Monitor",
+		"keyWord2":"Hp",
+		"keyWord3":"Ideapad"
+	},
+	{
+		"id": 8,
+		"productName": "Lenovo ZA1N0007US Yoga Tab 3 Plus QHD 10.1 inch Android Tablet (Qualcomm Snapdragon 652, 3GB RAM, 32GB SSD,Android 6.0), Black",
+		"url": "https://www.amazon.com.mx/Lenovo-ZA1N0007US-Android-Qualcomm-Snapdragon/dp/B01N8UG7HA/ref=sr_1_fkmr1_1?s=electronics&ie=UTF8&qid=1525825372&sr=1-1-fkmr1&keywords=Tablet+Android+6+Lenovo+Yoga+3+10+Pulgadas+Quadcore+16gb+1gb",
+		"price": 6662,
+		"keyWord1":"Tablet",
+		"keyWord2":"Lenovo",
+		"keyWord3":"Yoga"
+	},
+	{
+		"id": 9,
+		"productName": "Kingzer Ipegtop A702 7 Tablet PC Android 4.2 rk3026 dual core 512 MB/4GB 0,3 MP cámara dual",
+		"url": "https://www.amazon.com.mx/Kingzer-Ipegtop-Tablet-Android-4-2-rk3026-dual/dp/B00W5RQ370/ref=sr_1_fkmr0_1?s=electronics&ie=UTF8&qid=1525825505&sr=1-1-fkmr0&keywords=tablet+Pc+Vac+A702",
+		"price": 2370,
+		"keyWord1":"Pc",
+		"keyWord2":"Vac",
+		"keyWord3":"A702"
+	},
+	{
+		"id": 10,
+		"productName": "REDLEMON Radiador Ventilador Enfriador Externo para Laptop con Conexión USB. Enfría tu Computadora sin Instalación",
+		"url": "https://www.amazon.com.mx/REDLEMON-Ventilador-Enfriador-Computadora-Instalaci%C3%B3n/dp/B01ACIH0R0/ref=sr_1_fkmr0_1?s=electronics&ie=UTF8&qid=1525825563&sr=1-1-fkmr0&keywords=Redlemon+Enfriador+Laptop+Ventilador+Externo+Usb+Extractor+Z",
+		"price": 489,
+		"keyWord1":"Enfriador",
+		"keyWord2":"Ventilador",
+		"keyWord3":"Externo"
+	}
+]
