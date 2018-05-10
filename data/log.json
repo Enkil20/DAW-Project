@@ -103,5 +103,26 @@
                 "url": "https://www.toon.com"
             }
         ]
+    },
+    {
+        "id": "5af39ea269c55",
+        "uname": "Arturo",
+        "type": "2",
+        "password": "aaa123",
+        "name": "Arturo",
+        "last": "Salinas",
+        "email": "aaa@hotmail.com",
+        "producto": [
+            {
+                "id": "34343",
+                "nombre": "tele come carne",
+                "url": "https://www.fb.com"
+            },
+            {
+                "id": "523454",
+                "nombre": "cell el que casi mata a todos... ay goku D:",
+                "url": "https://www.toon.com"
+            }
+        ]
     }
 ]

@@ -1,19 +1,16 @@
 <?php
-    $base_path = "http://".$_SERVER["HTTP_HOST"]."/DAW-Project";
+    $base_path = "http://".$_SERVER["HTTP_HOST"]."/DAW/Proyecto/DAW-Project";
 ?>
 
 <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-<a class="navbar-brand" href="index.html">Tu Tienda</a>
+<a class="navbar-brand" href="<?php echo $base_path."/index.php";?>">Tu Tienda</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarCollapse">
         <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-                <a class="nav-link" href="<?php echo $base_path. "/about/About.HTML";?>">About us <span class="sr-only">(current)</span></a>
-            </li>
             <li class="nav-item">
-                <a class="nav-link" href="<?php echo $base_path."/log/login.php";?>">Entrar</a>
+                <a class="nav-link" href="<?php echo $base_path."./log/login.php";?>">Entrar</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="<?php echo $base_path."/sing/singin.php";?>">Registrarse</a>

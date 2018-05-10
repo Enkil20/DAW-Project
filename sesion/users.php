@@ -1,18 +1,15 @@
 <?php
     require_once dirname(__FILE__) . "/json.php";
     $file = "../data/log.json";
-    $filet = "../data/user.json";
     $Usuarios;
     $id;
     $aux = false;
     $producto;
-
     function getUser()
     {
         global $file;
         global $Usuarios;
         $Usuarios = readJson($file);
-        $Utype = readJson($filet);
     }
 
     function saveUser($data)
@@ -31,14 +28,10 @@
                     );
         $Usuarios[] = $newUsuario;
         saveJson($Usuarios, $file);
-        echo "<pre>";
-        var_dump($Usuarios);
-        echo "</pre>";
     }
 
     function getKey(){
-       getUser();
-
+        getUser();
         global $id;
         global $Usuarios;
         if(sizeof($Usuarios)!=0){
@@ -56,7 +49,6 @@
         global $producto;
         getKey();
         $producto = $id["producto"];
-        
     }
 
     function Name(){
@@ -72,12 +64,9 @@
         getKey();
         echo $id["uname"];
     }
-
-
     if(!isset($_SESSION["session_started"])){
         if(isset($_POST["sub"]))
         {
-            //var_dump($_POST);
             $email = $_POST["inputEmail"];
             getUser();         
             foreach($Usuarios as $usr => $value){
@@ -98,10 +87,8 @@
                 $_SESSION["type"] = "2";
                 header("Location: ../profile/profile.php");
             }
-        
         }
     }
-
 ?>
 
 

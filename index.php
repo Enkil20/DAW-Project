@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
     <!-- Custom styles for this template -->
-    <link href="../css/carrusel.css" rel="stylesheet">
+    <link href="./css/carrusel.css" rel="stylesheet">
   </head>
   <body>
 
@@ -29,9 +29,6 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
           <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="./about/About.HTML">About us <span class="sr-only">(current)</span></a>
-            </li>
             <li class="nav-item">
               <a class="nav-link" href="./log/login.php">Entrar</a>
             </li>
@@ -46,9 +43,7 @@
         </div>
       </nav>
     </header>
-
     <main role="main">
-
       <div id="myCarousel" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
           <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -67,11 +62,9 @@
             </div>
           </div>
           <div class="carousel-item">
-            <img class="second-slide" src="./images/segunda.jpg" alt="Second slide">
+            <img class="second-slide" src="./images/segunda.png" alt="Second slide">
             <div class="container">
               <div class="carousel-caption">
-                <h1 class="text-primary">Mercado libre.</h1>
-                <p>Tus productos por los mejores ofertadores del país.</p>
                 <p><a class="btn btn-lg btn-primary" href="https://www.mercadolibre.com.mx" role="button">Visita</a></p>
               </div>
             </div>

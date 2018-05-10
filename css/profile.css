@@ -1,28 +1,27 @@
-
-
-
-.wraper, .consulta{
-    display: inline-block;
-    margin-left: 5%;
+.wrapper{
+    width: 50%;
+    margin: 0px auto;
+}
+#changeNameForm, #changePassForm, #changeImgForm{
+    display: none;
 }
 
 #cont{
     margin: 0%;
     padding: 0%;
-    height: 1px;
     width: 920px;
     
-}
-#config{
-    display: inline-block;
-    margin-left: 189%;
-    width: 65%;
 }
 
 #lista h1{
     font-size: 150%;
     display: inline-block;
     margin-bottom: 50px;
+}
+.wrapper ul{
+    margin-top: 100px;
+    display: inline-flex;
+    list-style-type: none;
 }
 .card {
     padding-top: 80%;
@@ -214,7 +213,7 @@
     padding-top: 0;
     overflow: hidden;
     text-align: center;
-    background-color: rgba(214, 224, 226, 0.2);
+    background-color: rgba(214,224,226,0.2);
 }
 
 .card.hovercard .cardheader {
@@ -264,6 +263,4 @@
     padding: 0 20px;
     margin-bottom: 17px;
 }
-
-.btn{ border-radius: 50%; width:32px; height:32px; line-height:18px;  }
 
