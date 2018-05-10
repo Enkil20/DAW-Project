@@ -13,7 +13,7 @@
 <?php
 session_start();
 if(isset($_SESSION["start_time"]) && ($_SESSION["start_time"]>0)){
-    header ("Location: ../profile/profile.html");
+    header ("Location: ../profile/profile.php");
 }
 ?>
 
@@ -26,15 +26,17 @@ if(isset($_SESSION["start_time"]) && ($_SESSION["start_time"]>0)){
             <meta name="google-signin-client_id" content="YOUR_CLIENT_ID.apps.googleusercontent.com">
             <!-- CSS Externa -->
             <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-            <link rel="stylesheet" href="/css/logstyle.css" type="text/css" />
+            <link rel="stylesheet" href="../css/logstyle.css" type="text/css" />
+            <script src="./log.js"></script>
+
     </head>
 
-    <body>
-        <form class="form-signin" method="POST" action="../sesion/controlog.php" > 
+    <body onload="getfile();">
+        <form action="../sesion/controlog.php" onsubmit="return passvalid();"  class="form-signin" method="POST" > 
             <div class="text-center mb-4">
-                <img class="mb-4 img" src="/images/logo.png" alt="">
+                <img class="mb-4 img" src="../images/logo.png" alt="">
                 <h1 class="h3 mb-3 font-weight-normal">Ingresa tus datos</h1>
-                <p>Aún con dudas?... <a href="/index.html">Realizar más búsquedas.</a></p>
+                <p>Aún con dudas?... <a href="../index.php">Realizar más búsquedas.</a></p>
             </div>
         
             <div class="form-label-group">
@@ -52,7 +54,7 @@ if(isset($_SESSION["start_time"]) && ($_SESSION["start_time"]>0)){
                     <input value="remember-me" type="checkbox"> Mantener Sesión
                 </label>
             </div>
-            <button name="sub" class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+            <input name="sub" class="btn btn-lg btn-primary btn-block" type="submit" value="Log in"></input>
             <br/>
             <p class="text-center mb-4">O puedes inisiar sesion con: </p>
             

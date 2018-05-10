@@ -11,13 +11,9 @@
 -->
 
 <?php
-
 session_start();
 if(isset($_SESSION["start_time"]) && ($_SESSION["start_time"]>0)){
-    if($_SESSION["type"]=="2")
-        header ("Location: ../profile/profile.html");
-    else if ($_SESSION["type"]=="1")
-        header ("Location: ./listado_usuarios.php");
+    header ("Location: ../profile/profile.php");
 }
 ?>
 
@@ -31,35 +27,17 @@ if(isset($_SESSION["start_time"]) && ($_SESSION["start_time"]>0)){
 
         <!-- CSS Externa -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-        <link rel="stylesheet" href="/css/logstyle.css" type="text/css" />
-
-        <script>
-
-            function validpass(){
-                console.log("holi")
-
-                var pass1 = document.getElementById('inputPassword');
-                var pass2 = document.getElementById('inputPassword2');
-                
-                if(pass1.value == pass2.value){
-                    pass2.style.backgroundColor = goodColor;
-                    document.getElementById('form').submit();
-                }else{
-                    alert = "Password don't math";
-                    pass2.innerHTML = "";
-                    window.location.href = "../index.html";
-                }
-            }
-        </script>
+        <link rel="stylesheet" href="../css/logstyle.css" type="text/css" />
+        <script src="./sing.js"></script>
 
     </head>
 
     <body>
-        <form action="../sesion/users.php" class="form-signin" method="POST">
+        <form action="../sesion/users.php" onsubmit="return validpass();" class="form-signin" method="POST">
             <div class="text-center mb-4">
-                <img class="mb-4 img" src="/images/logo.png" alt="">
+                <img class="mb-4 img" src="../images/logo.png" alt="">
                 <h1 class="h3 mb-3 font-weight-normal">Regístrate</h1>
-                <p>Aún con dudas?... <a href="/index.html">Realizar más búsquedas.</a></p>
+                <p>Aún con dudas?... <a href="../index.php">Realizar más búsquedas.</a></p>
             </div>
 
             <div class="form-label-group">
@@ -83,7 +61,7 @@ if(isset($_SESSION["start_time"]) && ($_SESSION["start_time"]>0)){
             </div>
 
             <div class="form-label-group">
-                <input id="inputPassword2" name"inputPassword2" class="form-control border-primary is-valid" placeholder="Password" type="password" required>
+                <input id="inputPassword2" name="inputPassword2" class="form-control border-primary is-valid" placeholder="Password" type="password" required>
                 <label for="inputPassword2">Repetir Contrasenna</label>
             </div>
         
@@ -92,7 +70,7 @@ if(isset($_SESSION["start_time"]) && ($_SESSION["start_time"]>0)){
                     <input value="remember-me" class="is-valid" type="checkbox" required> He leido y acepto <a href="https://policies.google.com/terms?hl=es" target="_blank"> terminos y condiciones</a> 
                 </label>
             </div>
-            <button class="btn btn-lg btn-primary btn-block" type="submit" name="sub" >Sign in</button>
+            <input class="btn btn-lg btn-primary btn-block" type="submit" name="sub" value="Sing in" ></input>
             <br/>
             <p class="text-center mb-4">O puedes registrarte con</p>
             
@@ -122,6 +100,9 @@ if(isset($_SESSION["start_time"]) && ($_SESSION["start_time"]>0)){
             <br/>
               
             <p class="mt-5 mb-3 text-muted text-center">© 2017-2018</p>
-        </form>    
+        </form>  
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>  
     </body>
 </html>

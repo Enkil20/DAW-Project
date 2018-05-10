@@ -5,6 +5,7 @@
     $Usuarios;
     $id;
     $aux = false;
+    $producto;
 
     function getUser()
     {
@@ -39,54 +40,66 @@
        getUser();
 
         global $id;
-
+        global $Usuarios;
         if(sizeof($Usuarios)!=0){
             foreach($Usuarios as $usr){
-                if($_SESSION["uname"]==$Usuarios[$usr]["uname"]){
+                if($_SESSION["user"]==$usr["email"]){
                     $id=$usr;
                 }
             }
         }
     }
 
+    function Products(){
+        getUser();
+        global $id;
+        global $producto;
+        getKey();
+        $producto = $id["producto"];
+        
+    }
+
     function Name(){
         getUser();
         global $id;
         getKey();
-        echo $Usuarios[$id]["name"] . " " . $Usuarios[$id]["last"];
+        echo $id["name"] . " " . $id["last"];
     }
 
     function UName(){
         getUser();
         global $id;
         getKey();
-        echo $Usuarios[$id]["uname"];
+        echo $id["uname"];
     }
 
-    var_dump($_POST["sub"]);
-    if(isset($_POST["sub"]))
-    {
-        var_dump($_POST);
-        $email = $_POST["email"];
-        getUser();
-        foreach($Usuarios as $usr => $value){
-            if($Usuarios[$usr]["email"] == $email){
-                $aux = true;
-                echo "<br/>"."Alerta: ".$uname." el correo ya está dado de alta. Ingresa con un correo diferente. ";
-                header ("../sing/singin.html");
-                break;
-            }
-        }
 
-        if($aux == false){
-            saveUser($_POST);
-            session_start();
-            $_SESSION["start_time"] = time();
-            $_SESSION["user"] = $uname;
-            $_SESSION["type"] = "2";
-            header("Location: ../profile/profile.html");
+    if(!isset($_SESSION["session_started"])){
+        if(isset($_POST["sub"]))
+        {
+            //var_dump($_POST);
+            $email = $_POST["inputEmail"];
+            getUser();         
+            foreach($Usuarios as $usr => $value){
+                if($usr["email"] == $email){
+                    $aux = true;
+                    echo "<script>
+                    alert('Email registrado. Intente con uno diferente.');
+                    window.location.href='../sing/singin.php';
+                    </script>";
+                    break;
+                }
+            }
+            if($aux == false){
+                saveUser($_POST);
+                session_start();
+                $_SESSION["start_time"] = time();
+                $_SESSION["user"] = $email;
+                $_SESSION["type"] = "2";
+                header("Location: ../profile/profile.php");
+            }
+        
         }
-       
     }
 
 ?>
